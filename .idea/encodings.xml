@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/projects/01-basics/2d-primitives/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/01-basics/2d-primitives/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/01-basics/adding-motion/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/01-basics/adding-motion/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/02-simulations/ecosystem-simulation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/02-simulations/ecosystem-simulation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/02-simulations/introducing-forces/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/02-simulations/introducing-forces/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/02-simulations/procedural-dynamics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/02-simulations/procedural-dynamics/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/03-more/3d-shapes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/03-more/3d-shapes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/03-more/sketch-2dbox/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/03-more/sketch-2dbox/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/game-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projects/game-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

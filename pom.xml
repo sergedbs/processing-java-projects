@@ -1,22 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- Parent Project Info -->
     <groupId>org.sergedb.processing</groupId>
     <artifactId>processing-java-projects</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
+    <name>Processing Java Projects</name>
+    <description>Multi-module Maven project for Java Processing-based projects</description>
+
     <modules>
-        <module></module>
+        <!-- Shared Utilities -->
+        <module>projects/common</module>
+
+        <!-- Basics -->
+        <module>projects/01-basics/2d-primitives</module>
+        <module>projects/01-basics/adding-motion</module>
+
+        <!-- Simulations -->
+        <module>projects/02-simulations/ecosystem-simulation</module>
+        <module>projects/02-simulations/introducing-forces</module>
+        <module>projects/02-simulations/procedural-dynamics</module>
+
+        <!-- More -->
+        <module>projects/03-more/3d-shapes</module>
+        <module>projects/03-more/sketch-2dbox</module>
+
+        <!-- Final Project -->
+        <module>projects/game-demo</module>
     </modules>
 
+    <!-- Global Properties -->
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- Repositories -->
+    <repositories>
+        <repository>
+            <id>JogAmp</id>
+            <url>https://jogamp.org/deployment/maven/</url>
+        </repository>
+    </repositories>
+
+    <!-- Dependency Management for all submodules -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Processing Core Library -->
+            <dependency>
+                <groupId>org.processing</groupId>
+                <artifactId>core</artifactId>
+                <version>4.3.1</version>
+            </dependency>
+
+            <!-- Shared Utilities (Common Module) -->
+            <dependency>
+                <groupId>org.sergedb.processing</groupId>
+                <artifactId>common</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Compiler Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.13.0</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+
+                <!-- Exec Plugin -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
