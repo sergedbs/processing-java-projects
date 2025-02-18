@@ -21,6 +21,11 @@
             <groupId>org.sergedb.processing</groupId>
             <artifactId>common</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.sergedb.processing</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -29,7 +34,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>org.sergedb.processing.motion.Main</mainClass>
+                    <mainClass>org.sergedb.processing.motion.MainApp</mainClass>
                 </configuration>
             </plugin>
         </plugins>

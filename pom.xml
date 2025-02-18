@@ -15,6 +15,7 @@
     <modules>
         <!-- Shared Utilities -->
         <module>projects/common</module>
+        <module>projects/core</module>
 
         <!-- Basics -->
         <module>projects/01-basics/2d-primitives</module>
@@ -62,6 +63,13 @@
             <dependency>
                 <groupId>org.sergedb.processing</groupId>
                 <artifactId>common</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
+            <!-- Shared Utilities (Core Module) -->
+            <dependency>
+                <groupId>org.sergedb.processing</groupId>
+                <artifactId>core</artifactId>
                 <version>1.0.0</version>
             </dependency>
         </dependencies>
